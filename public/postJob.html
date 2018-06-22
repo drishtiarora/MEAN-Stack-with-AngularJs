@@ -1,0 +1,31 @@
+<div class="page-header">
+    <h2>POST JOBS HERE</h2>
+</div>
+
+<form ng-submit="postJob(jobData)">
+    <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" ng-model="jobData.jobTitle" class="form-control" placeholder="Enter job title">
+        <small id="jobTitleHelp" class="form-text text-muted">We'll share your job with everyone :)</small>
+    </div>
+    <div class="form-group">
+        <label for="jobDescription">Job Description</label>
+        <input type="text" ng-model="jobData.jobDescription" class="form-control"  placeholder="Enter job Description">
+    </div>
+    <div class="form-group">
+        <label for="keywords">Keywords</label>
+        <input type="text" ng-model="jobData.keywords" class="form-control"  placeholder="Keywords">
+    </div>
+    <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" ng-model="jobData.location" class="form-control"  placeholder="Location">
+    </div>
+    <!-- <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-primary">Save</button>
+    <hr>
+    
+</form>
+<button type="button" class="btn btn-success" ng-click="goToHome()">Back to Home</button>

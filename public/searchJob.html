@@ -1,0 +1,29 @@
+<div class="page-header">
+    <h2>SEARCH JOBS</h2>
+</div>
+<form>
+    <label>SEARCH BY TITLE</label>
+    <input type = "textbox" class="form-control" ng-model= "searchData.title" placeholder = " title" />
+    <br>
+    
+    <label>SEARCH BY KEYWORDS</label>
+    <input type = "textbox" class="form-control" ng-model= "searchData.keywords" placeholder = "keywords" /> 
+    <br>
+
+    <label>SEARCH BY LOCATION</label>
+    <input type = "textbox" class="form-control" ng-model= "searchData.location" placeholder = "location" /> 
+    <br>
+
+    <button type="submit" class="btn btn-primary" ng-click="search()">SEARCH</button>
+</form>
+
+<button type="button" class="btn btn-success" ng-click="savedJobs()">Saved Jobs</button>
+<br>
+<br>
+<button type="button" class="btn btn-success" ng-click="appliedJobs()">Applied Jobs</button>
+<br>
+<br>
+<button type="button" class="btn btn-success" ng-click="reset()">Reset</button>
+<br>
+<br>
+<button type="button" class="btn btn-success" ng-click="goToHome()">Back to Home</button>
